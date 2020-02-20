@@ -1,0 +1,78 @@
+.header
+	%div
+		%ul
+			%li
+				%button{type: "button", id: "Top"}
+					Top
+			%li
+				%button{type: "button", id: "AboutMe"}
+					AboutMe
+			%li
+				%button{type: "button", id: "Skills"}
+					Skills
+			%li
+				%button{type: "button", id: "Works"}
+					Works
+			%li
+				%button{type: "button", id: "Bottom"}
+					Bottom
+.body
+	= image_tag "/images/29476.jpg", alt: "Portfolioの画像"
+	%ul.AboutMe
+		AboutMe
+		%li
+			佐藤諒平
+		%li
+			1997年生まれ福岡県出身
+		%li
+			.about
+				2019年10月よりエンジニアになると決意。
+				そこからTECH::EXPERT生として2ヶ月半Railsなどに関する勉強を始めた。
+				2020年1月には42tokyoのPicsineを受けるが不合格だった。
+				現在は独学でUnityを勉強中。
+	= image_tag "/images/333.jpg", alt: "Portfolioの画像"
+	%ul.Skills
+		Skills
+		%li
+			言語：Haml, SCSS, Ruby, C, C#
+		%li
+			ツール：Ruby on Rails, Unity
+		%li
+			OS：Mac
+		%li
+			DB：SQL
+		%li
+			サーバー：AWS
+	= image_tag "/images/222.jpg", alt: "Portfolioの画像"
+	%ul.Works
+		Works
+		%li
+			.works
+				.works__box
+					.works__box__title
+						= image_tag "/images/aaa.jpg", alt: "CloneAppの画像"
+					.works__box__about
+						CloneApp<br>
+						Railsを用いたフリマーケットのクローンサイト。<br>
+						TECH::EXPERTの最終課題として計3名で開発。<br>
+		%li
+			.works
+				.works__box
+					.works__box__title
+						= image_tag "/images/aaa.jpg", alt: "hurryAppの画像"
+					.works__box__about
+						hurryApp<br>
+						Railsを用いた個人制作サイト。<br>
+						ドーム内や競技場内でのドリンク注文アプリ。
+		%li
+			.works
+				.works__box
+					.works__box__title
+						= image_tag "/images/aaa.jpg", alt: "RunAwayfromBallの画像"
+					.works__box__about
+						RunAwayfromBall<br>
+						Unityを用いた個人制作ゲーム。<br>
+						ランダムに出現する赤いボールから逃げる鬼ごっこのゲーム。
+	= image_tag "/images/11.jpg", alt: "Portfolioの画像"
+.footer
+	Portfolio 2020
