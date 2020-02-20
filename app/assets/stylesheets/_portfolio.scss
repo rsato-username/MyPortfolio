@@ -1,0 +1,95 @@
+*
+{
+	box-sizing: border-box;
+	object-fit: contain;
+	font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro';
+}
+
+img
+{
+	width: 100vw;
+}
+
+.header
+{
+	width: 100vw;
+	position: fixed;
+	div
+	{
+		background-color: rgba(255, 255, 255, 0.5);
+		width: 100vw;
+		ul
+		{
+			padding: 10px;
+			display: flex;
+			li
+			{
+				margin-left: 10px;
+				color: #555;
+				button
+				{
+					cursor: pointer;
+					border: none;
+					background-color: rgba(255, 255, 255, 0);
+					font-size: 15px;
+					&:focus
+					{
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.body
+{
+	text-align: center;
+	ul
+	{
+		padding: 50px 0;
+		font-size: 30px;
+		li
+		{
+			font-size: 20px;
+			margin-top: 30px;
+			.about
+			{
+				width: 500px;
+				margin: auto;
+			}
+			.works
+			{
+				width: 100vw;
+				margin: auto;
+				&__box
+				{
+					margin: auto;
+					width: 950px;
+					display: flex;
+					justify-content: left;
+					&__title
+					{
+						img
+						{
+							width: 400px;
+							margin-top: 5px;
+						}
+					}
+					&__about
+					{
+						margin-left: 15px
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer
+{
+	width: 100vw;
+	padding: 100px 30px;
+	text-align: center;
+}
