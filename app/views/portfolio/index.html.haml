@@ -1,22 +1,34 @@
 .header
 	%div
 		%ul
-			%li
-				%button{type: "button", id: "Top"}
-					Top
-			%li
-				%button{type: "button", id: "AboutMe"}
-					AboutMe
-			%li
-				%button{type: "button", id: "Skills"}
-					Skills
-			%li
-				%button{type: "button", id: "Works"}
-					Works
-			%li
-				%button{type: "button", id: "Bottom"}
-					Bottom
+			%button{type: "button", id: "Top"}
+				Top
+			%button{type: "button", id: "AboutMe"}
+				AboutMe
+			%button{type: "button", id: "Skills"}
+				Skills
+			%button{type: "button", id: "Works"}
+				Works
+			%button{type: "button", id: "Bottom"}
+				Bottom
+			-# %li
+			-# 	%button{type: "button", id: "Top"}
+			-# 		Top
+			-# %li
+			-# 	%button{type: "button", id: "AboutMe"}
+			-# 		AboutMe
+			-# %li
+			-# 	%button{type: "button", id: "Skills"}
+			-# 		Skills
+			-# %li
+			-# 	%button{type: "button", id: "Works"}
+			-# 		Works
+			-# %li
+			-# 	%button{type: "button", id: "Bottom"}
+			-# 		Bottom
 .body
+	.text
+		Portfolio
 	= image_tag "/images/29476.jpg", alt: "Portfolioの画像"
 	%ul.AboutMe
 		AboutMe
@@ -28,7 +40,7 @@
 			.about
 				2019年10月よりエンジニアになると決意。
 				そこからTECH::EXPERT生として2ヶ月半Railsなどに関する勉強を始めた。
-				2020年1月には42tokyoのPicsineを受けるが不合格だった。
+				2020年1月には42tokyoのPicsineを受けるが<br>不合格だった。
 				現在は独学でUnityを勉強中。
 	= image_tag "/images/333.jpg", alt: "Portfolioの画像"
 	%ul.Skills
@@ -50,29 +62,38 @@
 			.works
 				.works__box
 					.works__box__title
-						= image_tag "/images/aaa.jpg", alt: "CloneAppの画像"
+						= link_to "http://3.113.190.54/", target: :_blank do
+							= image_tag "/images/444.jpg", alt: "CloneAppの画像"
 					.works__box__about
 						CloneApp<br>
 						Railsを用いたフリマーケットのクローンサイト。<br>
 						TECH::EXPERTの最終課題として計3名で開発。<br>
+						機能：ユーザー新規登録、ログイン機能、商品出品、<br>商品購入、商品編集、商品削除、検索機能
 		%li
 			.works
 				.works__box
 					.works__box__title
-						= image_tag "/images/aaa.jpg", alt: "hurryAppの画像"
+						= link_to "http://18.176.213.183/", target: :_blank do
+							= image_tag "/images/555.jpg", alt: "HurryAppの画像"
+							= image_tag "/images/666.jpg", alt: "HurryAppの画像"
 					.works__box__about
-						hurryApp<br>
+						HurryApp<br>
 						Railsを用いた個人制作サイト。<br>
-						ドーム内や競技場内でのドリンク注文アプリ。
+						ドーム内や競技場内でのドリンク注文アプリ。<br>
+						機能：ユーザー新規登録、ログイン機能、注文機能、<br>レビュー機能、管理者機能
 		%li
 			.works
 				.works__box
 					.works__box__title
-						= image_tag "/images/aaa.jpg", alt: "RunAwayfromBallの画像"
+						-# = link_to root_path, target: :_blank do
+						= image_tag "/images/777.png", alt: "RunAwayfromBallの画像"
+						= image_tag "/images/999.png", alt: "RunAwayfromBallの画像"
+						= video_tag "/images/aaa.mp4", autoplay: true, loop: true, controls: true
 					.works__box__about
 						RunAwayfromBall<br>
 						Unityを用いた個人制作ゲーム。<br>
-						ランダムに出現する赤いボールから逃げる鬼ごっこのゲーム。
+						ランダムに出現する赤いボールから逃げるゲーム。<br>
+						(開発中)
 	= image_tag "/images/11.jpg", alt: "Portfolioの画像"
 .footer
 	Portfolio 2020

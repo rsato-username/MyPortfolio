@@ -13,31 +13,41 @@ img
 .header
 {
 	width: 100vw;
+	height: 5vh;
 	position: fixed;
+	z-index: 1;
 	div
 	{
 		background-color: rgba(255, 255, 255, 0.5);
 		width: 100vw;
+		height: 5vh;
 		ul
 		{
-			padding: 10px;
 			display: flex;
-			li
-			{
-				margin-left: 10px;
-				color: #555;
+			padding: 10px;
+			height: 100%;
+			width: 100%;
+			// li
+			// {
+				// 	background-color: #000;
+				// 	height: 100%;
 				button
 				{
 					cursor: pointer;
 					border: none;
 					background-color: rgba(255, 255, 255, 0);
-					font-size: 15px;
+					height: 2.5vh;
+					line-height: 1%;
+					color: #555;
+					font-size: 1.25vw;
+					text-align: center;
+					margin-left: 10px;
 					&:focus
 					{
 						outline: none;
 					}
 				}
-			}
+			// }
 		}
 	}
 }
@@ -46,40 +56,71 @@ img
 .body
 {
 	text-align: center;
+	.text
+	{
+		margin: 0 auto;
+		width: 100vw;
+		position: absolute;
+		font-size: 5vw;
+		text-shadow: 2px 2px 0 #fff;
+		top: 50%;
+        color: #555;
+	}
+	.img
+	{
+		position: relative;
+	}
 	ul
 	{
 		padding: 50px 0;
-		font-size: 30px;
+		// font-size: 30px;
+		font-size: 2.5vw;
 		li
 		{
-			font-size: 20px;
-			margin-top: 30px;
+			// font-size: 20px;
+			font-size: 1.4vw;
+			margin: 30px 0;
 			.about
 			{
-				width: 500px;
+				width: 35vw;
 				margin: auto;
 			}
 			.works
 			{
 				width: 100vw;
-				margin: auto;
 				&__box
 				{
-					margin: auto;
-					width: 950px;
+					margin: 0 auto;
+					padding: 50px 0;
+					// width: 1000px;
+					width: 70vw;
 					display: flex;
-					justify-content: left;
+					border-bottom: solid #ddd;
 					&__title
 					{
+						width: 28vw;
+						// width: 400px;
 						img
 						{
-							width: 400px;
-							margin-top: 5px;
+							width: 28vw;
+							// width: 400px;
+							margin: 10px 0;
+							box-shadow: 0 0 8px gray;
+						}
+						video
+						{
+							width: 28vw;
+							// width: 400px;
+							margin: 10px 0;
+							outline: none;
+							box-shadow: 0 0 8px gray;
 						}
 					}
 					&__about
 					{
-						margin-left: 15px
+						width: 42vw;
+						// width: 600px;
+						padding: 0 15px;
 					}
 				}
 			}
@@ -92,4 +133,5 @@ img
 	width: 100vw;
 	padding: 100px 30px;
 	text-align: center;
+	font-size: 1.5vw;
 }
