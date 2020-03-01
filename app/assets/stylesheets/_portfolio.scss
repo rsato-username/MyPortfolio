@@ -46,6 +46,10 @@ img
 					{
 						outline: none;
 					}
+					&:hover
+					{
+						color: #000;
+					}
 				}
 			// }
 		}
@@ -56,6 +60,10 @@ img
 .body
 {
 	text-align: center;
+	img
+	{
+		position: relative;
+	}
 	.text
 	{
 		margin: 0 auto;
@@ -64,11 +72,9 @@ img
 		font-size: 5vw;
 		text-shadow: 2px 2px 0 #fff;
 		top: 50%;
-        color: #555;
-	}
-	.img
-	{
-		position: relative;
+		// top: 400px;
+		// left: 570px;
+		color: #555;
 	}
 	ul
 	{
