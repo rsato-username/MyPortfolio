@@ -7,7 +7,7 @@
 
 img
 {
-	width: 100vw;
+	width: 100%;
 }
 
 .header
@@ -27,31 +27,26 @@ img
 			padding: 10px;
 			height: 100%;
 			width: 100%;
-			// li
-			// {
-				// 	background-color: #000;
-				// 	height: 100%;
-				button
+			button
+			{
+				cursor: pointer;
+				border: none;
+				background-color: rgba(255, 255, 255, 0);
+				height: 2.5vh;
+				line-height: 1%;
+				color: #555;
+				font-size: 1.25vw;
+				text-align: center;
+				margin-left: 10px;
+				&:focus
 				{
-					cursor: pointer;
-					border: none;
-					background-color: rgba(255, 255, 255, 0);
-					height: 2.5vh;
-					line-height: 1%;
-					color: #555;
-					font-size: 1.25vw;
-					text-align: center;
-					margin-left: 10px;
-					&:focus
-					{
-						outline: none;
-					}
-					&:hover
-					{
-						color: #000;
-					}
+					outline: none;
 				}
-			// }
+				&:hover
+				{
+					color: #000;
+				}
+			}
 		}
 	}
 }
@@ -60,30 +55,29 @@ img
 .body
 {
 	text-align: center;
-	img
+	div
 	{
 		position: relative;
-	}
-	.text
-	{
-		margin: 0 auto;
-		width: 100vw;
-		position: absolute;
-		font-size: 5vw;
-		text-shadow: 2px 2px 0 #fff;
-		// top: 50%;
-		top: 400px;
-		// left: 570px;
-		color: #555;
+		.text
+		{
+			margin: 0 auto;
+			position: absolute;
+			font-size: 5vw;
+			text-shadow: 2px 2px 0 #fff;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			color: #555;
+		}
 	}
 	ul
 	{
 		padding: 50px 0;
-		// font-size: 30px;
 		font-size: 2.5vw;
 		li
 		{
-			// font-size: 20px;
 			font-size: 1.4vw;
 			margin: 30px 0;
 			.about
@@ -98,25 +92,21 @@ img
 				{
 					margin: 0 auto;
 					padding: 50px 0;
-					// width: 1000px;
 					width: 70vw;
 					display: flex;
 					border-bottom: solid #ddd;
 					&__title
 					{
 						width: 28vw;
-						// width: 400px;
 						img
 						{
 							width: 28vw;
-							// width: 400px;
 							margin: 10px 0;
 							box-shadow: 0 0 8px gray;
 						}
 						video
 						{
 							width: 28vw;
-							// width: 400px;
 							margin: 10px 0;
 							outline: none;
 							box-shadow: 0 0 8px gray;
@@ -125,7 +115,6 @@ img
 					&__about
 					{
 						width: 42vw;
-						// width: 600px;
 						padding: 0 15px;
 					}
 				}
