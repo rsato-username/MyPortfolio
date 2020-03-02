@@ -9,8 +9,8 @@
 				Skills
 			%button{type: "button", id: "Works"}
 				Works
-			%button{type: "button", id: "Bottom"}
-				Bottom
+			-# %button{type: "button", id: "Bottom"}
+			-# 	Bottom
 .body
 	%div
 		= image_tag "/images/29476.jpg", alt: "Portfolioの画像"
@@ -52,7 +52,8 @@
 							= image_tag "/images/444.jpg", alt: "CloneAppの画像"
 							= image_tag "/images/bbb.png", alt: "CloneAppの画像"
 					.works__box__about
-						CloneApp<br>
+						.name
+							CloneApp<br><br>
 						Railsを用いたフリマーケットのクローンサイト。<br>
 						TECH::EXPERTの最終課題として計3名で開発。<br>
 						機能：ユーザー新規登録、ログイン機能、商品出品、商品購入、商品編集、商品削除、検索機能
@@ -64,7 +65,8 @@
 							= image_tag "/images/555.jpg", alt: "HurryAppの画像"
 							= image_tag "/images/666.jpg", alt: "HurryAppの画像"
 					.works__box__about
-						HurryApp<br>
+						.name
+							HurryApp<br><br>
 						Railsを用いた個人制作サイト。<br>
 						ドーム内や競技場内でのドリンク注文アプリ。<br>
 						機能：ユーザー新規登録、ログイン機能、注文機能、レビュー機能、管理者機能
@@ -74,10 +76,11 @@
 					.works__box__title
 						-# = link_to root_path, target: :_blank do
 						= image_tag "/images/777.png", alt: "RunAwayfromBallの画像"
-						= image_tag "/images/999.png", alt: "RunAwayfromBallの画像"
-						= video_tag "/images/aaa.mp4", autoplay: true, loop: true, controls: true
+						-# = image_tag "/images/999.png", alt: "RunAwayfromBallの画像"
+						= video_tag "/images/vvv.mov", autoplay: true, loop: true, controls: true
 					.works__box__about
-						RunAwayfromBall<br>
+						.name
+							RunAwayfromBall<br><br>
 						Unityを用いた個人制作ゲーム。<br>
 						ランダムに出現する赤いボールから逃げるゲーム。<br>
 	= image_tag "/images/11.jpg", alt: "Portfolioの画像"
