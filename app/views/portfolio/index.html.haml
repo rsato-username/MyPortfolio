@@ -9,8 +9,8 @@
 				Skills
 			%button{type: "button", id: "Works"}
 				Works
-			-# %button{type: "button", id: "Bottom"}
-			-# 	Bottom
+			%button{type: "button", id: "Bottom"}
+				Bottom
 .body
 	%div
 		= image_tag "/images/29476.jpg", alt: "Portfolioの画像"
@@ -85,4 +85,8 @@
 						ランダムに出現する赤いボールから逃げるゲーム。<br>
 	= image_tag "/images/11.jpg", alt: "Portfolioの画像"
 .footer
+	.border
+	= link_to "https://github.com/rsato-username", target: :_blank do
+		%i.fab.fa-github-square
+	<br>
 	Portfolio 2020
