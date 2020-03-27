@@ -74,19 +74,18 @@
 			.works
 				.works__box
 					.works__box__title
-						-# = link_to root_path, target: :_blank do
-						= image_tag "/images/777.png", alt: "RunAwayfromBallの画像"
-						-# = image_tag "/images/999.png", alt: "RunAwayfromBallの画像"
-						= video_tag "/images/bn.mov", autoplay: true, loop: true, controls: true
+						= link_to "https://unityroom.com/games/rab", target: :_blank do
+							= image_tag "/images/777.png", alt: "RunAwayfromBallの画像"
+							= video_tag "/images/bn.mov", autoplay: true, loop: true, controls: true
 					.works__box__about
 						.name
 							RunAwayfromBall<br><br>
 						Unityを用いた個人制作ゲーム。<br>
-						ランダムに出現する赤いボールから逃げるゲーム。<br>
+						ランダムに出現する赤いボールから逃げる鬼ごっこゲーム。<br>
 	= image_tag "/images/11.jpg", alt: "Portfolioの画像"
 .footer
 	.border
 	= link_to "https://github.com/rsato-username", target: :_blank do
 		%i.fab.fa-github-square
 	<br>
-	Portfolio 2020
+	Portfolio
