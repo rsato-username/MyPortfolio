@@ -24,23 +24,20 @@
 			1997年生まれ福岡県出身
 		%li
 			.about
-				2019年10月よりエンジニアになると決意。
-				そこからTECH::EXPERT生として2ヶ月半Railsなどに関する勉強を始めた。
-				2020年1月には42tokyoのPicsineを受けるが不合格だった。
-				現在は独学でUnityを勉強中。
+				2019年10月よりエンジニアになると決意。そこからTECH::EXPERT生として3ヶ月Railsなどに関する勉強を始めた。2020年1月には42tokyoのPicsineを受けるが不合格だった。現在は独学でUnityを勉強中。
 	= image_tag "/images/333.jpg", alt: "Portfolioの画像"
 	%ul.Skills
 		Skills
 		%li
-			言語：Haml, Sass, Ruby, C, C#
+			言語：HTML, CSS, Haml, Sass, Ruby, C, C#, Javascript
 		%li
 			ツール：Ruby on Rails, Unity
 		%li
-			OS：Mac
+			OS：MacOS
 		%li
 			DB：SQL
 		%li
-			サーバー：AWS
+			サーバー：AWS, Heroku
 	= image_tag "/images/222.jpg", alt: "Portfolioの画像"
 	%ul.Works
 		Works
@@ -53,10 +50,16 @@
 							= image_tag "/images/bbb.png", alt: "CloneAppの画像"
 					.works__box__about
 						.name
-							CloneApp<br><br>
-						Railsを用いたフリマーケットのクローンサイト。<br>
-						TECH::EXPERTの最終課題として計3名で開発。<br>
-						機能：ユーザー新規登録、ログイン機能、商品出品、商品購入、商品編集、商品削除、検索機能
+							CloneApp<br>
+						【
+						= link_to "http://3.113.190.54/", target: :_blank do
+							http://3.113.190.54/
+						】Basic認証導入しています<br><br>
+						Ruby on Railsを用いたフリマクローンサイト。<br>
+						TECH::EXPERTの最終課題として計3名で開発。<br><br>
+						機能：ユーザー新規登録、ログイン機能、商品出品、商品購入、商品編集、商品削除、検索機能<br><br>
+						担当箇所：バックエンド（ユーザー新規登録、SNS認証、ログイン機能、商品編集、検索機能）<br>フロントエンド（商品詳細ページ、本人確認ページ）<br>
+						デプロイ、DB設計
 		%li
 			.works
 				.works__box
@@ -66,21 +69,32 @@
 							= image_tag "/images/66.jpg", alt: "HurryAppの画像"
 					.works__box__about
 						.name
-							HurryApp<br><br>
-						Railsを用いた個人制作サイト。<br>
-						ドーム内や競技場内でのドリンク注文アプリ。<br>
-						機能：ユーザー新規登録、ログイン機能、ユーザー編集機能、注文機能、レビュー機能、管理者機能
+							HurryApp<br>
+						【
+						= link_to "http://18.176.213.183/", target: :_blank do
+							http://18.176.213.183/
+						】<br><br>
+						Ruby on Railsを用いた個人制作サイト。<br>
+						ドーム内や競技場内でのドリンク注文アプリ。<br><br>
+						機能：ユーザー新規登録、ログイン機能、ユーザー編集機能、注文機能、レビュー機能、管理者機能<br><br>
+						さらに詳しいことは下記リンクへ<br>
+						= link_to "https://github.com/rsato-username/HurryApp", target: :_blank do
+							https://github.com/rsato-username/HurryApp
 		%li
 			.works
 				.works__box
 					.works__box__title
 						= link_to "https://unityroom.com/games/rab", target: :_blank do
 							= image_tag "/images/777.png", alt: "RunAwayfromBallの画像"
-							= video_tag "/images/rabshort.mp4", autoplay: true, loop: true, controls: true
+						= video_tag "/images/rabshort.mp4", autoplay: true, loop: true, controls: true
 					.works__box__about
 						.name
-							RunAwayfromBall<br><br>
-						Unityを用いた個人制作ゲーム。<br>
+							RunAwayfromBall<br>
+						【
+						= link_to "https://unityroom.com/games/rab", target: :_blank do
+							https://unityroom.com/games/rab
+						】<br><br>
+						Unity/C#を用いた個人制作ゲーム。<br>
 						ランダムに出現する赤いボールから逃げる鬼ごっこゲーム。<br><br>
 						下記リンクで簡単に紹介しています
 						= link_to "https://youtu.be/TxmbF_a3hz8", target: :_blank do
@@ -91,11 +105,15 @@
 					.works__box__title
 						= link_to "https://unityroom.com/games/aigo", target: :_blank do
 							= image_tag "/images/1.png", alt: "AimfortheGoalの画像"
-							= video_tag "/images/AGvideo.mp4", autoplay: true, loop: true, controls: true
+						= video_tag "/images/AGvideo.mp4", autoplay: true, loop: true, controls: true
 					.works__box__about
 						.name
-							AimfortheGoal<br><br>
-						Unityを用いた個人制作ゲーム。<br>
+							AimfortheGoal<br>
+						【
+						= link_to "https://unityroom.com/games/aigo", target: :_blank do
+							https://unityroom.com/games/aigo
+						】<br><br>
+						Unity/C#を用いた個人制作ゲーム。<br>
 						制限時間内にゴールを目指すゲーム。<br><br>
 						下記リンクで簡単に紹介しています
 						= link_to "https://youtu.be/sl5LdWx37Yo", target: :_blank do
