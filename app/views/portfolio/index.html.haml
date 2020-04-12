@@ -45,6 +45,33 @@
 			.works
 				.works__box
 					.works__box__title
+						= link_to "http://18.176.213.183/", target: :_blank do
+							= image_tag "/images/55.jpg", alt: "HurryAppの画像"
+							= image_tag "/images/66.jpg", alt: "HurryAppの画像"
+					.works__box__about
+						.name
+							HurryApp<br>
+						【
+						= link_to "http://18.176.213.183/", target: :_blank do
+							http://18.176.213.183/
+						】<br><br>
+						Ruby on Railsを用いた個人制作サイト。<br>
+						ドーム内や競技場内での注文アプリ。<br><br>
+						.name
+							機能
+						ユーザー新規登録、ログイン機能、ユーザー編集機能、注文機能、レビュー機能、管理者機能、通知機能（実装中）<br><br>
+						.name
+							テスト用アカウント
+						ユーザーID: 59909091<br>
+						メールアドレス: test@test.com<br>
+						パスワード: test12345<br><br>
+						さらに詳しいことは下記リンクへ<br>
+						= link_to "https://github.com/rsato-username/HurryApp", target: :_blank do
+							https://github.com/rsato-username/HurryApp
+		%li
+			.works
+				.works__box
+					.works__box__title
 						= link_to "http://3.113.190.54/", target: :_blank do
 							= image_tag "/images/444.jpg", alt: "CloneAppの画像"
 							= image_tag "/images/bbb.png", alt: "CloneAppの画像"
@@ -57,29 +84,18 @@
 						】Basic認証導入しています<br><br>
 						Ruby on Railsを用いたフリマクローンサイト。<br>
 						TECH::EXPERTの最終課題として計3名で開発。<br><br>
-						機能：ユーザー新規登録、ログイン機能、商品出品、商品購入、商品編集、商品削除、検索機能<br><br>
-						担当箇所：バックエンド（ユーザー新規登録、SNS認証、ログイン機能、商品編集、検索機能）<br>フロントエンド（商品詳細ページ、本人確認ページ）<br>
-						デプロイ、DB設計
-		%li
-			.works
-				.works__box
-					.works__box__title
-						= link_to "http://18.176.213.183/", target: :_blank do
-							= image_tag "/images/55.jpg", alt: "HurryAppの画像"
-							= image_tag "/images/66.jpg", alt: "HurryAppの画像"
-					.works__box__about
 						.name
-							HurryApp<br>
-						【
-						= link_to "http://18.176.213.183/", target: :_blank do
-							http://18.176.213.183/
-						】<br><br>
-						Ruby on Railsを用いた個人制作サイト。<br>
-						ドーム内や競技場内でのドリンク注文アプリ。<br><br>
-						機能：ユーザー新規登録、ログイン機能、ユーザー編集機能、注文機能、レビュー機能、管理者機能<br><br>
-						さらに詳しいことは下記リンクへ<br>
-						= link_to "https://github.com/rsato-username/HurryApp", target: :_blank do
-							https://github.com/rsato-username/HurryApp
+							機能
+						ユーザー新規登録、ログイン機能、商品出品、商品購入、商品編集、商品削除、検索機能<br><br>
+						.name
+							担当箇所
+						.part
+							【バックエンド】
+						ユーザー新規登録、SNS認証、ログイン機能、商品編集、検索機能
+						.part
+							【フロントエンド】
+						商品詳細ページ、本人確認ページ<br><br>
+						デプロイ、DB設計
 		%li
 			.works
 				.works__box
@@ -120,7 +136,6 @@
 							https://youtu.be/sl5LdWx37Yo
 	= image_tag "/images/11.jpg", alt: "Portfolioの画像"
 .footer
-	.border
 	= link_to "https://github.com/rsato-username", target: :_blank do
 		%i.fab.fa-github-square
 	<br>
